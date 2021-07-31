@@ -46,3 +46,10 @@ This command will give you an output like this
   Promedio             : 3 952 688,96        
   ----------------------------------- 
 ```
+## Author
+
+- [Bernardo Ayala](https://www.bernardoayala.com)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
