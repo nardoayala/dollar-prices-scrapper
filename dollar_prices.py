@@ -47,22 +47,15 @@ def get_dollar_prices(url):
 
     data = soup.find_all('div', class_='c-nombre')
     valid_pages = (
-        'AirTM',
         'Banesco',
         'BCV',
-        'BolivarCucuta',
-        'CucutaDivisas',
         'DolarToday',
-        'DolarTrue',
         'Dolar Promedio',
-        'DolarSatochi',
+        'EnParaleloVzla',
         'ExchangeMonitor.net',
-        'LocalBitcoins',
         'Mercantil',
-        'Mkambio',
         'Monitor Dolar',
         'PayPal',
-        'Yadio'
     )
     dollar_prices = dict()
 
@@ -80,11 +73,10 @@ def get_dollar_prices(url):
 def calculate_average(dollar_prices_data):
     prices_list = list()
     exclude_from_avg = (
-        'AirTM',
         'Banesco',
         'BCV',
         'Mercantil',
-        'PayPal'
+        'PayPal',
     )
 
     for page_name, dollar_price in dollar_prices_data.items():
